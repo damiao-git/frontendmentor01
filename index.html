@@ -2,68 +2,70 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeira página</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Results summary component</title>
 </head>
 
 <body>
-    <main>
-        <div class="principal-azul">
-            <h3 class="result">Your Result</h3>
-            <div class="nota">
-                <h3>76</h3>
-                <span>of 100</span>
-            </div>
-            <h2>Great</h2>
-            <p>You scored higher than 65% of the people
-                who have taken these tests.
-            </p>
+  <main>
+    <div class="left-side">
+      <h3>Your Result</h3>
+      <div class="score">
+        <h1>76</h1>
+        <span>of 100</span>
+      </div>
+      <h2>Great</h2>
+      <p>You score higher than 65% of the people
+        who have taken these tests.</p>
+    </div>
+    <div class="right-side">
+      <h3>Summary</h3>
+      <div class="scores">
+        <div class="mini-score reaction">
+          <div class="gap-1">
+            <img src="assets/images/icon-reaction.svg" alt="">
+            Reaction
+          </div>
+          <div>
+            <span><b>80</b> / 100</span>
+          </div>
         </div>
-        <div class="sumario">
-            <h2 class="">Summary</h2>
-            <div class="notas">
-                <article class="reaction">
-                    <div>
-                        <img src="images/icon-reaction.svg" alt="reação">
-                        <p class="palavras">Reaction</p>
-                    </div>
-                    <div >
-                        <p class="nota-barra"><b>80</b> / 100</p>
-                    </div>
-
-                </article>
-                <article class="memory">
-                    <div><img src="images/icon-memory.svg" alt="memoria">
-                        <p class="palavras memory-palavra">Memory</p>
-                    </div>
-                    <div>
-                        <p class="nota-barra"><b>92</b> / 100</p>
-                    </div>
-
-                </article>
-                <article class="verbal">
-                    <div><img src="images/icon-verbal.svg" alt="Verbal">
-                        <p class="palavras verbal-palavra">Verbal</p>
-                    </div>
-                    <div>
-                        <p class="nota-barra"><b>61</b> / 100</p>
-                    </div>
-                </article>
-                <article class="visual">
-                    <div><img src="images/icon-visual.svg" alt="visual">
-                        <p class="palavras visual-palavra">Visual</p>
-                    </div>
-                    <div>
-                        <p class="nota-barra"> <b>72</b> / 100</p>
-                    </div>
-                </article>
-            </div>
-            <button class="button">Continue</button>
+        <div class="mini-score memory">
+          <div class="gap-1">
+            <img src="assets/images/icon-memory.svg" alt="">
+            Memory
+          </div>
+          <div>
+            <span><b>92</b> / 100</span>
+          </div>
         </div>
-    </main>
+        <div class="mini-score verbal">
+          <div class="gap-1">
+            <img src="assets/images/icon-verbal.svg" alt="">
+            Verbal
+          </div>
+          <div>
+            <span><b>61</b> / 100</span>
+          </div>
+        </div>
+        <div class="mini-score visual">
+          <div class="gap-1">
+            <img src="assets/images/icon-visual.svg" alt="">
+            Visual
+          </div>
+          <div>
+            <span><b>72</b> / 100</span>
+          </div>
+        </div>
+        <button>Continue</button>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
